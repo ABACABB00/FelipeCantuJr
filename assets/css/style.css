@@ -1,0 +1,16 @@
+nav {
+    width: 100%;
+}
+
+ul {
+    float: right;
+}
+
+li, a{
+    display: inline;
+}
+
+button {
+    max-width: 45%;
+}
+
