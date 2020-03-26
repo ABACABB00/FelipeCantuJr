@@ -1,16 +1,21 @@
-nav {
-    width: 100%;
+
+.myfootlogo {
+    position: relative;
+    max-width: 3%;
+    left: 10px;
 }
 
-ul {
-    float: right;
+.myicons {
+    position: relative;
+    left: 250px;
+    padding: 25px;
 }
 
-li, a{
-    display: inline;
+.myicons i {
+    margin-left: 50px; 
+    color: black;
 }
 
-button {
-    max-width: 45%;
+.myicons i:hover {
+    color: #343a40;
 }
-
