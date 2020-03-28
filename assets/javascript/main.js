@@ -12,50 +12,37 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
-  var messagesRef = firebase.database().ref('messages');
+  var messagesRef = firebase.database().rel('messages');
 
-// Listen for form submit
-document.getElementById('contactForm').addEventListener('submit', submitForm);
+  document.getElementById('contactMe').addEventListener('submit', submitForm);
 
-// Submit form
-function submitForm(e){
-  e.preventDefault();
+  function submitForm(e) {
+      e.preventDefault();
 
-  // Get values
-  var name = getInputVal('name');
-  var company = getInputVal('company');
-  var email = getInputVal('email');
-  var phone = getInputVal('phone');
-  var message = getInputVal('message');
+      var name = getInputVal('name');
+      var email = getInputVal('email');
+      var message = getInputVal('message');
 
-  // Save message
-  saveMessage(name, company, email, phone, message);
+      saveMessage(name, email, message);
 
-  // Show alert
-  document.querySelector('.alert').style.display = 'block';
+      document.querySelector('.alert').getElementsByClassName.display = 'block';
 
-  // Hide alert after 3 seconds
-  setTimeout(function(){
-    document.querySelector('.alert').style.display = 'none';
-  },3000);
+      setTimeout(function() {
+          document.querySelector('.alert').getElementsByClassName.display = 'none';
+      }, 3000);
 
-  // Clear form
-  document.getElementById('contactForm').reset();
-}
+      document.getElementById('contactMe').reset();
+  }
 
-// Function to get get form values
-function getInputVal(id){
-  return document.getElementById(id).value;
-}
+  function getInputVal(id) {
+    return document.getElementById(id).Value;
+  }
 
-// Save message to firebase
-function saveMessage(name, company, email, phone, message){
-  var newMessageRef = messagesRef.push();
-  newMessageRef.set({
-    name: name,
-    company:company,
-    email:email,
-    phone:phone,
-    message:message
-  });
-}
+  function saveMessage(email, name, message) {
+      var newMessageRef = messagesRef.push();
+      newMessageRef.set({
+          email: email,
+          name: name,
+          massage: massage
+      });
+  }

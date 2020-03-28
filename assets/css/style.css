@@ -1,4 +1,13 @@
 
+.myjumbotron {
+    background-image: url("../../images/background.jpg");
+}
+
+.myconjumbotron {
+    background-image: url("../../images/background.jpg");
+    background-position: center;
+}
+
 .myfootlogo {
     position: relative;
     max-width: 3%;
