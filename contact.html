@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,7 +22,7 @@
         <div class="container">
             <div class="col-md-4">
                 <div class="navlogo">
-                    <a href="#"><img class="w-25" src="images/logo.png" alt="logo"></a>
+                    <a href="index.html"><img class="w-25" src="images/logo.png" alt="logo"></a>
                     <a class="navbar-brand" href="index.html">Felipe Cantu Jr</a>
                 </div>
             </div>
@@ -57,10 +58,10 @@
     </div>
 
     <div class="container">
+       <div class="wrapper animated bounceInLeft">
         <div class="row">
             <div class="col-md-9">
                 <div class="card">
-                    <div class="alert">Your message has been sent</div>
                     <form id="contactMe">
                         <h1>Contact Me</h1>
                         <p> Even the all-powerful Pointing has no
@@ -72,19 +73,21 @@
                         <div class="form-group">
                             <label for="email">Email address</label>
                             <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                                else.</small>
+                                placeholder="Enter email" required>
                         </div>
                         <div class="form-group">
                             <label for="names">Name</label>
-                            <input type="name" class="form-control" id="name" placeholder="Name">
+                            <input type="name" class="form-control" id="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="names">Telephone</label>
+                            <input type="text" class="form-control" id="phone" placeholder="1-(555)-555-5555" required>
                         </div>
                         <div class="form-group">
                             <label for="massages">Massage</label>
-                            <textarea class="form-control" id="massage" rows="3" placeholder="Enter Message Here..."></textarea>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter Message Here..."></textarea>
                         </div>
-                        <button class="form-control btn btn-info">Submit</button>
+                        <button class="form-control btn btn-info" id="validation">Submit</button>
                     </form>
                 </div>
             </div>
@@ -104,6 +107,7 @@
                 <p>1(234)234 2345</p>
             </div>
         </div>
+       </div>
     </div>
 
     <div class="container-fluid mt-5 my-5">
@@ -124,17 +128,17 @@
                     <h4>Felipe Cantu Jr</h4>
                     <p>CEO</p>
                     <hr>
-                    <a href="#">felipecantujr@gmail.com</a>
+                    <a class="mymailto" href="mailto:cantujr.felipe@gmail.com">felipecantujr@gmail.com</a>
                     <p>1(234)234 2345</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
                     <img class="w-100 h-100" src="images/eric.jpg" alt="">
-                    <h4>Eric Gamboa</h4>
+                    <h4>Erick Gamboa</h4>
                     <p>CTO</p>
                     <hr>
-                    <a href="#">ericgamboa@gmail.com</a>
+                    <a class="mymailto" href="mailto:@example.com">erickgamboa@gmail.com</a>
                     <p>1(234)234 2345</p>
                 </div>
             </div>
@@ -144,7 +148,7 @@
                     <h4>Jessica Robinson</h4>
                     <p>Design Director</p>
                     <hr>
-                    <a href="#">jessicarobinson@gmail.com</a>
+                    <a class="mymailto" href="mailto:webmaster@example.com">jessicarobinson@gmail.com</a>
                     <p>1(234)234 2345</p>
                 </div>
             </div>
@@ -203,6 +207,35 @@
     </footer>
 </body>
 <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="assets/javascript/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+
+    $('#validation').click(function() {
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var phone = $('#phone').val();
+
+        if(name == '' || email == '' || phone == '') {
+            swal({
+                title: "Fields Empty!!",
+                text: "Please check for missing field Required!!",
+                icon: "warning",
+                button: "Ok",
+            });
+        }
+        else {
+            swal({
+                title: "Successfully Submitted",
+                icon: "success",
+                button: "Yes!",
+            });
+        }
+    })
+</script>
 </html>

@@ -6,6 +6,11 @@
 .myconjumbotron {
     background-image: url("../../images/background.jpg");
     background-position: center;
+    margin: 0;
+    margin-top: 50px;
+}
+.mymailto {
+    color: black;
 }
 
 .myfootlogo {
