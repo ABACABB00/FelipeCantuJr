@@ -35,12 +35,28 @@ body {
     padding: 25px;
 }
 
+.myicons a {
+    color: black;
+}
+
 .myicons i {
     margin-left: 50px; 
-    color: black;
+    /* color: black; */
 }
 
 .myicons i:hover {
     color: #343a40;
 }
 
+@media screen and (max-width: 1008px) {
+    .myicons i {
+        position: relative;
+        right: 150px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .myicons i {
+        display: none;
+    }
+}
