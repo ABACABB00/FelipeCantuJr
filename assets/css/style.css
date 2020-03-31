@@ -41,7 +41,6 @@ body {
 
 .myicons i {
     margin-left: 50px; 
-    /* color: black; */
 }
 
 .myicons i:hover {
@@ -53,10 +52,22 @@ body {
         position: relative;
         right: 150px;
     }
+    .myfootlogo {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 770px) {
     .myicons i {
         display: none;
+    }
+    .myfootlogo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        width: 100%;
     }
 }
