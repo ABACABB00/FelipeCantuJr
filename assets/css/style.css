@@ -19,6 +19,24 @@ body {
     font-style: italic;
 }
 
+.container-fluid .col-sm{
+    border: 1px solid black;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.container-fluid .col-sm:hover{
+    background-color: #343a40;
+    color: white;
+}
+
 .myconjumbotron {
     background-image: url("../../images/background.jpg");
     background-position: center;

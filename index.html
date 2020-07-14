@@ -1,268 +1,535 @@
-<!DOCTYPE html>
-<html lang="en">
+<DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Cantu jr</title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        .toggle {
-            width: 100%;
-            padding: 10px 20px;
-            text-align: right;
-            box-sizing: border-box;
-            font-size: 30px;
-            display: none;
-        }
-        @media (max-width: 992px) {
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Felipe Cantu jr</title>
+        <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <style>
             .toggle {
-                display: block;
-            }
-            ul {
                 width: 100%;
-                display:none;
-            }
-            ul li {
-                display: block;
-                text-align: center;
-                width: 100%;
-            }
-            .active {
-                display: block;
-            }
-            .mybutton {
+                padding: 10px 20px;
+                text-align: right;
+                box-sizing: border-box;
+                font-size: 30px;
                 display: none;
             }
-            .navlogo {
-                display: none;
+
+            @media (max-width: 992px) {
+                .toggle {
+                    display: block;
+                }
+
+                ul {
+                    width: 100%;
+                    display: none;
+                }
+
+                ul li {
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .active {
+                    display: block;
+                }
+
+                .mybutton {
+                    display: none;
+                }
+
+                .navlogo {
+                    display: none;
+                }
             }
-        }
-    </style>
-</head>
-<body>
+        </style>
+    </head>
 
-    <!-- navbar -->
-    <nav class="navbar navbar-default navbar-light bg-light sticky-top">
-        <div class="container">
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <div class="navlogo">
-                    <a href="index.html"><img class="w-25" src="images/logo.png" alt="logo"></a>
-                    <a class="navbar-brand" href="index.html">Felipe Cantu Jr</a>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="toggle">
-                    <div class="menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                </div>
-                <ul class="nav justify-content-end mymainavbar">
-                    <li class="nav-item">
-                        <a class="nav-link active text-dark" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary" href="portfolio.html">PORTFOLIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary" href="about.html">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary" href="contact.html">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <a class="btn btn-success mybutton" href="contact.html" role="button">Hire Me</a>
-            </div>
-        </div>
-    </nav>
-    <!-- Home Section (Jumbotron) -->
-    <div class="jumbotron text-center myjumbotron">
-        <div class="container">
-            <div class="col-md-12 float-center">
-                <h1 class="display-2 myshad">Felipe Cantu Jr</h1>
-                <p class="lead myshad">Give yourself a Extra Edge with a beautiful creafted Website</p>
-                <hr>
-                <p class="lead">
-                    <a class="btn btn-info btn-lg" href="about.html" role="button">Learn More</a>
-                    <a class="btn btn-info btn-lg" href="contact.html" role="button">Hire</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- Quote Section -->
-
-    <div class="container text-center">
-        <div class="card">
-            <div class="card-header bg-dark">
-                <h5 class="text-white">WHAT I BELIEVE</h5>
-            </div>
-            <div class="card-body bg-secondary">
-                <blockquote class="blockquote">
-                    <p class="text-white">"If you tell me precisely what it is a machine cannot do, then I can always
-                        make a machine which will do just that"</p>
-                    <footer class="blockquote-footer text-white">John von Neumann</footer>
-                </blockquote>
-            </div>
-        </div>
-    </div>
-
-    <!-- About Section -->
-
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-8">
-                <h5>ABOUT</h5>
-                <h2>Who Am I</h2>
-                <p class="lead">Hi there, my name is Felipe Cantu I am looking forward into working with you.
-                    I am a web developer and a web designer that helps create your vision become a reality.
-                    More about me is I love building, creating programming, designing and helping people so
-                    I think I am in the right position I've wanted to do for along time.
-                </p>
-                <a class="btn btn-info" href="about.html" role="button">Learn More</a>
-            </div>
-            <div class="col-md-4">
-                <img class="w-100" src="images/avatar.jpg" alt="logo">
-            </div>
-        </div>
-    </div>
-
-    <!-- Work Section -->
-
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-6">
-                <img class="w-100" src="images/coding.jpg" alt="code">
-            </div>
-            <div class="col-md-6 pt-5">
-                <h5>WORK</h5>
-                <h2>What I Can Do For You</h2>
-                <p class="lead mb-4">I can offer you an amazing Website of your style of choice.
-                    I can provide you with marketing services such as social media,
-                    SEO (search engine optimization) ranking, Email marketing, online display ads,
-                    and I can also provide or help with your blogs.
-                </p>
-                <a class="btn btn-info" href="portfolio.html" role="button">Learn More</a>
-            </div>
-        </div>
-    </div>
+    <body>
 
 
-    <!--Blog Section -->
-    <div class="container mt-5 mb-5">
-        <div class="row mt-5 mb-5">
-            <div class="col-md-12">
-                <h5 class="text-center">ABOUT ME</h5>
-            </div>
-            <div class="col-md-12 text-center">
-                <a class="text-dark" href="about.html">
-                    <h1>Felipe Cantu Jr</h1>
-                </a>
-            </div>
-        </div>
-        <div class="row text-center text-white">
-            <div class="col-md-4">
-                <div class="card border-light">
-                    <div class="card-header bg-dark">10 Thing That Make An Awesome Web Designer</div>
-                    <div class="card-body bg-secondary">
-                        <h5 class="card-title">MAR 23, 2020</h5>
-                        <p class="card-text"> Doing everything on this list will help you make a beautiful website and
-                            grow leads.
-                            Feel free to make a check off list to help remind you.
-                        </p>
+        <nav class="navbar navbar-default navbar-light bg-light sticky-top">
+            <div class="container">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="navlogo">
+                        <a href="#contact"><img class="w-25" src="images/logo.png" alt="logo"></a>
+                        <a class="navbar-brand" href="#about">Felipe Cantu Jr</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border-light">
-                    <div class="card-header bg-dark">10 Things Every Modern Web Developer Must Know</div>
-                    <div class="card-body bg-secondary">
-                        <h5 class="card-title">MAR 23, 2020</h5>
-                        <p class="card-text">who writes code for a living will tell you it's pretty hard.
-                            The languages and frameworks to build with, has left developers
-                            with more of a challenge than ever before.
-                        </p>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="toggle">
+                        <div class="menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
                     </div>
+                    <ul class="nav justify-content-end mymainavbar">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" href="#index">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <a class="btn btn-success mybutton" href="#contact" role="button">Hire Me</a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card border-light">
-                    <div class="card-header bg-dark">10 Things You Should Know About A Web Developers and What They Can
-                        Do!</div>
-                    <div class="card-body bg-secondary">
-                        <h5 class="card-title">MAR 23, 2020</h5>
-                        <p class="card-text">When it come to being a web developer
-                            HTML, CSS and Javascript are the basic
-                            essential and then you have programming languages
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        </nav>
 
-    <!-- Conclusion Section -->
-
-    <div class="jumbotron text-center myconjumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1 class="display-2 pr-5 myshad">Build a Brand that makes you, YOU!!</h1>
-                </div>
-                <div class="col-md-6">
-                    <p class="lead h1 pt-5 mt-5 myshad"><strong>Today is the day to build the business of your dreams.
-                            Share your mission with the world — and blow your customers away.</strong></p>
+        <div class="jumbotron text-center myjumbotron">
+            <div class="container">
+                <div class="col-md-12 float-center">
+                    <h1 class="display-2 myshad">Felipe Cantu Jr</h1>
+                    <p class="lead myshad">Give yourself a Extra Edge with a beautiful creafted Website</p>
                     <hr>
-                    <p class="lead mt-4">
-                        <a class="btn btn-info btn-lg" href="contact.html" role="button">Start Now</a>
+                    <p class="lead">
+                        <a class="btn btn-info btn-lg" href="#about" role="button">Learn More</a>
+                        <a class="btn btn-info btn-lg" href="#contact" role="button">Hire</a>
                     </p>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- footer -->
 
-    <footer class="page-footer font-small bg-secondary myfooter">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 py-5 myicons">
-                    <a class="fb-ic" href="https://www.facebook.com/felipe.cantu.3133719" target="_blank">
-                        <i class="fa fa-facebook" style="font-size:48px;"></i>
-                    </a>
-                    <a class="dr-ic" href="https://dribbble.com/Anakupto" target="_blank">
-                        <i class="fa fa-dribbble" style="font-size:48px;"></i>
-                    </a>
-                    <a class="li-ic" href="https://www.linkedin.com/in/j-r-cantu-4b0763183/" target="_blank">
-                        <i class="fa fa-linkedin" style="font-size:48px;"></i>
-                    </a>
-                    <a class="tw-ic" href="https://twitter.com/imbigtbleed" target="_blank">
-                        <i class="fa fa-twitter" style="font-size:48px;"></i>
-                    </a>
-                    <a class="gi-ic" href="https://github.com/ABACABB00" target="_blank">
-                        <i class="fa fa-github" style="font-size:48px;"></i>
-                    </a>
-                    <a class="co-ic" href="https://codepen.io/abacabb00" target="_blank">
-                        <i class="fa fa-codepen" style="font-size:48px;"></i>
-                    </a>
+        <div class="container text-center">
+            <div class="card">
+                <div class="card-header bg-dark">
+                    <h5 class="text-white">WHAT I BELIEVE</h5>
+                </div>
+                <div class="card-body bg-secondary">
+                    <blockquote class="blockquote">
+                        <p class="text-white">"If you tell me precisely what it is a machine cannot do, then I can
+                            always
+                            make a machine which will do just that"</p>
+                        <footer class="blockquote-footer text-white">John von Neumann</footer>
+                    </blockquote>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright text-center py-2 bg-dark text-white">&copy; Copyright 2020
-            <a href="index.html"><img class="myfootlogo" src="images/logo.png" alt="logo"></a>
-            <a class="text-muted" href="https://abacabb00.github.io/FelipeCantuJr/" target="_blank">Felipe Cantu Jr</a>
-        </div>
-    </footer>
-</body>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script>
-    $('document').ready(function() {
-        $('.menu').click(function() {
-            $('ul').toggle()
-        })
-    })
-</script>
 
-</html>
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-8">
+                    <h2 id="about">Who Am I</h2>
+                    <hr />
+                    <p class="lead">Hi there, my name is Felipe Cantu I am looking forward into working with you.
+                        I am a Full Stack Developer that helps create your vision become a reality.
+                        More about me is I love building things, programming is a passion, designing and helping are
+                        all things I really enjoy doing. I grew up in a family that never even owned a computer but
+                        technology
+                        has always been my calling and I would love to work for a company that shares the same interest
+                        as
+                        me.
+                        I have a computer technicain background I can build and fix computers and I love overclocking
+                        and
+                        seeing what
+                        I can do on linux. I also love to play guitar, draw and skateboard when I am not at my desk.
+                    </p>
+                    <div id="btn1">
+                        <button class="btn btn-info" id="button1">
+                            <p>Learn More</p>
+                        </button>
+                        <p class="aboutinfo">You will be given a random number at the start of the game.
+                            There are four crystals below. By clicking on a crystal you will add a specific amount of
+                            points to your total score.
+                            You win the game by matching your total score to random number, you lose the game if your
+                            total score goes above the random number.
+                            The value of each crystal is hidden from you until you click on it.
+                            Each time when the game starts, the game will change the values of each crystal.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="w-100" src="images/avatarpicture.PNG" alt="logo">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <h2>Skills &amp; Experience </h2>
+            <hr />
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm">
+                        HTML
+                    </div>
+                    <div class="col-sm">
+                        CCS
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        JAVASCRIPT
+                    </div>
+                    <div class="col-sm">
+                        JQUERY
+                    </div>
+                    <div class="col-sm">
+                        NODE.JS
+                    </div>
+                    <div class="col-sm">
+                        API
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        REACT
+                    </div>
+                    <div class="col-sm">
+                        PYTHON
+                    </div>
+                    <div class="col-sm">
+                        LINUX
+                    </div>
+                    <div class="col-sm">
+                        GIT
+                    </div>
+                    <div class="col-sm">
+                        VISUAL STUDIO CODE
+                    </div>
+                    <div class="col-sm">
+                        BOOSTRAP
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        MYSQL
+                    </div>
+                    <div class="col-sm">
+                        MONGODB
+                    </div>
+                    <div class="col-sm">
+                        VUE
+                    </div>
+                    <div class="col-sm">
+                        DJANGO
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container text-center mt-5 mb-5">
+            <h1 id="portfolio">My Work</h1>
+            <hr class="my-4">
+        </div>
+
+
+        <div class="container-fluid mt-4">
+            <div class="row justify-content-center">
+                <div class="col-auto mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/crystalgame.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Crystal Collector | The Game</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">HTML, CSS, Javascript</h6>
+                            <p class="card-text">A game you have to match up the random number assigned to you in order
+                                to
+                                win</p>
+                            <a class="btn btn-info w-100" href=" https://abacabb00.github.io/unit-4-game/" role="button"
+                                target="_blank">ViewHere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/psychicimage.png">
+                        <div class="card-body">
+                            <h5 class="card-title">The Psychic Game</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">HTML, CSS, Javascript</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a class="btn btn-info w-100" href="https://abacabb00.github.io/Psychic-Game/" role="button"
+                                target="_blank">ViewHere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/scrapimage.PNG">
+                        <div class="card-body">
+                            <h5 class="card-title">Scraper News Network Site</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a class="btn btn-info w-100" href="https://scrapernew.herokuapp.com/" role="button"
+                                target="_blank">ViewHere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/rps.PNG">
+                        <div class="card-body">
+                            <h5 class="card-title">Rock Paper Scissors Game</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a class="btn btn-info w-100" href="https://abacabb00.github.io/RPS-Multiplayer/"
+                                role="button" target="_blank">ViewHere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/naruto.PNG">
+                        <div class="card-body">
+                            <h5 class="card-title">Naruto Clicky Game</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a class="btn btn-info w-100" href="https://reactclickygameforme.herokuapp.com/"
+                                role="button" target="_blank">ViewHere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/giphy.PNG">
+                        <div class="card-body">
+                            <h5 class="card-title">Giphy Search Site</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a class="btn btn-info w-100" href="https://abacabb00.github.io/GifTastic/" role="button"
+                                target="_blank">ViewHere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/faciasnip.PNG">
+                        <div class="card-body">
+                            <h5 class="card-title">FACIA budgeting Application</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a class="btn btn-info w-100" href="https://pr0ject-2.herokuapp.com/" role="button"
+                                target="_blank">ViewHere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/comic.PNG">
+                        <div class="card-body">
+                            <h5 class="card-title">Comic Book Search Site</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a class="btn btn-info w-100" href="https://asalinas9.github.io/FirstGroupProject/"
+                                role="button" target="_blank">ViewHere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/limetree.PNG">
+                        <div class="card-body">
+                            <h5 class="card-title">Lime Tree Service</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a class="btn btn-info w-100" href="https://landscapingforall.herokuapp.com/" role="button"
+                                target="_blank">ViewHere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/triviagame.PNG">
+                        <div class="card-body">
+                            <h5 class="card-title">Quote Trivia Game</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a class="btn btn-info w-100" href="https://abacabb00.github.io/TriviaGame/" role="button"
+                                target="_blank">ViewHere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container text-center mt-5 mb-5">
+            <h1 id="contact">Contact Me</h1>
+            <hr class="my-4">
+        </div>
+
+
+        <div class="container justify-content-center">
+            <div class="wrapper animated bounceInLeft">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="card">
+                            <form id="contactMe">
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                        placeholder="Enter email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="names">Name</label>
+                                    <input type="name" class="form-control" id="name" placeholder="Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="names">Telephone</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="1-(555)-555-5555"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="massages">Massage</label>
+                                    <textarea class="form-control" id="message" rows="3"
+                                        placeholder="Enter Message Here..."></textarea>
+                                </div>
+                                <button class="form-control btn btn-info" id="validation">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <i class="fa fa-map-marker fa-1x m-1" aria-hidden="true"></i>
+                            <h5>My Location</h5>
+                        </div>
+                        <p>Dallas Tx
+                        </p>
+                        <hr />
+                        <div class="row">
+                            <i class="fa fa-code-fork fa-1x m-1" aria-hidden="true"></i>
+                            <h5>Working Hours</h5>
+                        </div>
+                        <p>6am - 2pm, Mon to Fri</p>
+                        <hr />
+                        <div class="row">
+                            <i class="fa fa-phone fa-1x m-1" aria-hidden="true"></i>
+                            <h5>Phone</h5>
+                        </div>
+                        <p>(682)-551-4546</p>
+                        <hr />
+                        <div class="row">
+                            <i class="fa fa-envelope fa-1x m-1" aria-hidden="true"></i>
+                            <h5>Contact Email</h5>
+                        </div>
+                        <a class="mymailto" href="mailto:cantujr.felipe@gmail.com">cantujr.felipe@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer class="page-footer font-small bg-secondary myfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 py-5 myicons">
+                        <a class="fb-ic" href="https://www.facebook.com/felipe.cantu.3133719" target="_blank">
+                            <i class="fa fa-facebook" style="font-size:48px;"></i>
+                        </a>
+                        <a class="dr-ic" href="https://dribbble.com/Anakupto" target="_blank">
+                            <i class="fa fa-dribbble" style="font-size:48px;"></i>
+                        </a>
+                        <a class="li-ic" href="https://www.linkedin.com/in/felipe-cantu-jr/" target="_blank">
+                            <i class="fa fa-linkedin" style="font-size:48px;"></i>
+                        </a>
+                        <a class="tw-ic" href="https://twitter.com/imbigtbleed" target="_blank">
+                            <i class="fa fa-twitter" style="font-size:48px;"></i>
+                        </a>
+                        <a class="gi-ic" href="https://github.com/ABACABB00" target="_blank">
+                            <i class="fa fa-github" style="font-size:48px;"></i>
+                        </a>
+                        <a class="co-ic" href="https://codepen.io/abacabb00" target="_blank">
+                            <i class="fa fa-codepen" style="font-size:48px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-2 bg-dark text-white">&copy; Copyright 2020
+                <a href="index.html"><img class="myfootlogo" src="images/logo.png" alt="logo"></a>
+                <a class="text-muted" href="https://abacabb00.github.io/FelipeCantuJr/" target="_blank">Felipe Cantu
+                    Jr</a>
+            </div>
+        </footer>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/javascript/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $('document').ready(function () {
+            $('.menu').click(function () {
+                $('ul').toggle()
+            })
+        })
+
+
+        $('.aboutinfo').hide();
+        $('#btn1').on('click', function () {
+            $('.aboutinfo').toggle();
+            $('#button1').hide();
+        });
+
+
+
+        $('#validation').click(function () {
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var phone = $('#phone').val();
+
+            if (name == '' || email == '' || phone == '') {
+                swal({
+                    title: "Fields Empty!!",
+                    text: "Please check for missing field Required!!",
+                    icon: "warning",
+                    button: "Ok",
+                });
+            }
+            else {
+                swal({
+                    title: "Successfully Submitted",
+                    icon: "success",
+                    button: "Yes!",
+                });
+            }
+        })
+
+        $('document').ready(function () {
+            $('.menu').click(function () {
+                $('ul').toggle()
+            })
+        })
+
+
+
+
+    </script>
+
+    </html>
