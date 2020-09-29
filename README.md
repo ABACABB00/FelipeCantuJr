@@ -15,7 +15,7 @@ Contact info at the bottom of the website
 
 
 
-![Contact Info](images/snipcontact.png)
+![Contact Info](/images/snipcontact.png)
 
 
 --------------------------------------------------
