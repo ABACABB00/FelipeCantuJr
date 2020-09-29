@@ -10,7 +10,6 @@
 * FireBase 
 * Heroku
 
-Contact info at the bottom of the website 
 
 ![](images/background.jpg)
 
