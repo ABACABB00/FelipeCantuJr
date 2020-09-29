@@ -15,8 +15,8 @@ Contact info at the bottom of the website
 
 
 
-![Contact Info](/images/snipcontact.png)
-
+<img src="/images/snipcontact.png" alt="Contact Info Image"/>
+# My cool project and above is the logo of it
 
 --------------------------------------------------
 
