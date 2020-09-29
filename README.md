@@ -1,6 +1,5 @@
 
-## sub heading 
-👩‍💻👋 Felipe Cantu Jr Portfolio
+## 👩‍💻👋 Felipe Cantu Jr Portfolio
 
 💥💫💯 This is my Portfolio Website is to help with any kind of job offers | Welcome all interested in working with me
 
@@ -13,7 +12,7 @@
 
 Contact info at the bottom of the website 
 
-![](images/snipcontact.png)
+![](images/background.jpg)
 
 
 --------------------------------------------------
