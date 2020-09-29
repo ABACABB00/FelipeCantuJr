@@ -1,20 +1,21 @@
 
 ## sub heading 
-Felipe Cantu Jr Portfolio
+👩‍💻👋 Felipe Cantu Jr Portfolio
 
-👩‍💻👋 This is my Portfolio Website is to help with any kind of job offers | Welcome all interested in working with me 💥💫💯
+💥💫💯 This is my Portfolio Website is to help with any kind of job offers | Welcome all interested in working with me
 
 * HTML
 * CSS
 * JavaScript 
 * jQuery
 * FireBase 
+* Heroku
 
 Contact info at the bottom of the website 
 
 
 
-![Contact Info](sportsfit.jpg)
+![Contact Info](images/snipcontact.png)
 
 
 --------------------------------------------------
