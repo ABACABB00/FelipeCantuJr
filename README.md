@@ -11,6 +11,7 @@ This is my Portfolio Website
 * jQuery
 * FireBase 
 * Heroku
+* SweetAlert
 
 
 ![](images/background.jpg)
