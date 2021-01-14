@@ -1,8 +1,9 @@
 
-## sub heading 
-👩‍💻👋 Felipe Cantu Jr Portfolio
+## 👩‍💻👋 Felipe Cantu Jr Portfolio
 
-💥💫💯 This is my Portfolio Website is to help with any kind of job offers | Welcome all interested in working with me
+This is my Portfolio Website 
+💫This Website is to help with any kind of job offers
+💯Welcome all interested in working with me.
 
 * HTML
 * CSS
@@ -10,13 +11,11 @@
 * jQuery
 * FireBase 
 * Heroku
-
-Contact info at the bottom of the website 
-
+* SweetAlert
 
 
-<img src="/images/snipcontact.png" alt="Contact Info Image"/>
-# My cool project and above is the logo of it
+![](images/background.jpg)
+
 
 --------------------------------------------------
 
